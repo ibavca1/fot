@@ -1,5 +1,5 @@
 {
-  "presets": ["es2016", "latest", "react"],
+  "presets": ["es2016", "latest", "stage-2","react"],
   "plugins": [
     "transform-decorators-legacy",
     "transform-class-properties"
