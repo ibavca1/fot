@@ -3,7 +3,9 @@ import {
   Modal,
   Button
 } from 'react-bootstrap';
-//import {user} from '../../models/userRegister';
+
+//TODO Добавить json2html формы
+
 class InsertRow extends Component {
   constructor(props) {
     super(props);
