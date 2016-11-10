@@ -4,6 +4,7 @@ import {bindActionCreators} from 'redux';
 import Page from '../components/page';
 import FotNav from '../components/nav-bar';
 import * as userActions from '../actions/userActions';
+//import * as popupActions from '../actions/popupActions';
 import 'bootstrap/dist/css/bootstrap.css';
 
 class App extends Component {
@@ -13,11 +14,11 @@ class App extends Component {
   }
 
   render(){
-    let {user, page} = this.props;
+    let {user, page, popups} = this.props;
     const {userExit, userLogin} = this.props.userActions;
     return <div>
       <FotNav user={user} userExit={userExit} userLogin={userLogin}/>
-      <Page page={page} />
+      <Page page={page} popups={popups} action={this.props.popupActions}/>
     </div>
   }
 }
